@@ -52,24 +52,22 @@ body{
  
 .main-header .toggle-nav span{
     color:white;
-    position: relative;
+    position: fixed;
+    font-size: 17px;
+    right: 70px;
     display: inline;
 }
-.main-header .main-user {
+/* .main-header .main-user {
     position: relative;
     display: inline;
     left: 30%;
     top:auto;
-}
+} */
 .main-header .main-user i {
     color: var(--SuperDarkWine);
-    font-size: 13px;
-    background-color: var(--RoseWine);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    width: 15px;
+    font-size: 17px;
+    position: fixed;
+    right: 15px;
     text-align: center;
 }
 
