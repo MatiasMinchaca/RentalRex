@@ -1,9 +1,16 @@
 :root{
+    --SuperDarkWine: #3A0611;
     --DarkWine: #670f22;
     --Wine: #6A041A;
     --OldWine: #9A0526;
     --RedWine: #AB0D2F;
     --RoseWine: #CD0C36;
+    --BrinkPink: #FF637B;
+    --PaleSpringBud: #F4F1BB;
+    --MediumTurquoise: #66D7D1;
+    --KeyLime: #EAF27F;
+    --Cerise: #D1345B;
+    --Blond: #FFF8Bf;
 }
 
 *{
@@ -26,19 +33,21 @@ body{
 }
 /* Header */
 .header{
-    background-color: var(--OldWine);
-    padding-bottom: 7px;
-    padding-top: 5px;
+    background-color: var(--Cerise);
+    padding-bottom: 14px;
+    padding-top: 12px;
 }
 .main-header{
     padding: 0;
 }
 .main-header .header .search{
     display: inline;
+    color: white;
 }
-.main-header .header .seacrh .main-search{
-    color: var(--DarkWine);
+.main-header .header .seacrh input{
+    color: white;
     text-align: center;
+    background-color: var(--Wine);
 }
  
 .main-header .toggle-nav span{
@@ -47,21 +56,27 @@ body{
     display: inline;
 }
 .main-header .main-user {
-    background-color: var(--RoseWine);
     position: relative;
     display: inline;
-    border-radius: 100%;
+    left: 30%;
+    top:auto;
 }
 .main-header .main-user i {
-    color: va(--Wine);
-    font-size: 20px;
-    border-radius: 50%;
+    color: var(--SuperDarkWine);
+    font-size: 13px;
+    background-color: var(--RoseWine);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    width: 15px;
+    text-align: center;
 }
 
-/* Navegacion */
+/* Navegation */
 .main-header .main-nav li{
-    background-color: var(--OldWine);
-    width: 75px;
+    background-color: var(--BrinkPink);
+    width: 100%;
     padding-top: 3px;
     padding-bottom: 4px;
     text-align: center;
@@ -69,4 +84,26 @@ body{
 }
 .main-header .main-nav li a{
     color: white;
+}
+/* Floating Button */
+.btn-flotante i{
+	font-size: 20px; /* Cambiar el tamaño de la tipografia */
+ /* Texto en mayusculas */
+ /* Fuente en negrita o bold */
+	color: #ffffff; /* Color del texto */
+	border-radius: 50%; /* Borde del boton */
+ /* Espacio entre letras */
+	background-color: var(--Cerise); /* Color de fondo */
+	padding: 10px 10px; /* Relleno del boton */
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+}
+.btn-flotante i:hover {
+	background-color: var(--BrinkPink); /* Color de fondo al pasar el cursor */
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(-7px);
 }
