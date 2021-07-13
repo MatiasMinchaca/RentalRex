@@ -82,6 +82,9 @@ body{
 }
 .main-header .main-nav li a{
     color: white;
+    display: block;
+    text-transform: uppercase;
+    
 }
 /* Floating Button */
 .btn-flotante i{
@@ -91,7 +94,7 @@ body{
 	border-radius: 50%; /* Borde del boton */
  /* Espacio entre letras */
 	background-color: var(--Cerise); /* Color de fondo */
-	padding: 10px 10px; /* Relleno del boton */
+	padding: 9px 10px; /* Relleno del boton */
 	position: fixed;
 	bottom: 5px;
 	right: 5px;
