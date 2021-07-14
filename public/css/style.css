@@ -23,7 +23,6 @@
     list-style: none;
 }
 body{
-
     background-image: url('../image/Background.jpg');
     background-position: center;
     background-repeat: repeat;
@@ -40,21 +39,16 @@ body{
 .main-header{
     padding: 0;
 }
-.main-header .header .search{
-    display: inline;
-    color: white;
-}
-.main-header .header .seacrh input{
-    color: white;
-    text-align: center;
-    background-color: var(--Wine);
+
+.main-header .header .search .main-search {
+    display: none;
 }
  
 .main-header .toggle-nav span{
     color:white;
-    position: fixed;
+    position: relative;
     font-size: 17px;
-    right: 70px;
+    left: 15px;
     display: inline;
 }
 /* .main-header .main-user {
@@ -66,9 +60,10 @@ body{
 .main-header .main-user i {
     color: var(--SuperDarkWine);
     font-size: 17px;
-    position: fixed;
+    position:absolute;
     right: 15px;
     text-align: center;
+    top: 12px;
 }
 
 /* Navegation */
@@ -107,3 +102,6 @@ body{
 	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
 	transform: translateY(-7px);
 }
+/* 
+    Estabamos con mi cementerio con un amigo y cuando salimos
+*/
